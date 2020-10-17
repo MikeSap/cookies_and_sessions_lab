@@ -1,0 +1,16 @@
+<%= form_tag('/products') do%>
+<input name=product>
+<input type=submit value='add to cart'>
+<%end%>
+<br>
+
+
+
+<h2> Items in your cart: </h2>
+<ul>
+<% cart.each do |product| %>
+
+   <li> <%=product%> </li>
+
+<%end%>
+</ul>
